@@ -1,0 +1,32 @@
+:root {
+  --color-text:#454545;
+  --color-text-primary:#E5AC33;
+  --color-primary: #669374;
+  --color-back-primary: #E3F0DE;
+}
+
+.carousel__back {
+  border-radius: 20px;
+  background: #E3F0DE;
+}
+
+.content__banner {
+  padding-left: 40px;
+  padding: 40px;
+  padding: 40px;
+  padding-right: 0;
+}
+
+.h1 {
+  max-width: 744px;
+  color: var(--color-text);
+  font-family: Lack;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+}
+
+.span {
+  color: var(--color-text-primary);
+}

@@ -8,7 +8,6 @@
   <link href="./css/bootstrap-reboot.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
   <link href="./fonts/Lack-Font.css">
-  <link href="./fonts/NT-Somic.css">
   <title>Кооперация УРА</title>
 </head>
 
@@ -53,40 +52,232 @@
     </div>
   </nav>
 
-  <div id="carouselExampleIndicators" class="carousel slide container carousel__back mt-5">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="banner__main d-flex flex-column content__banner">
-          <h1 class="h1 title__banner">Заказывайте все товары со <span class="span">скидкой до 70%</span></h1>
-          <p class="d1 subtitle__banner">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          </p>
-          <button class="btn">
-            <p>Подробнее</p><img class="btn__icon"/>
-          </button>
+  <section class="section">
+    <div id="carouselExampleIndicators" class="carousel slide container carousel__back mt-5">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="banner__main content__banner row position-relative">
+            <div class="col-md-7 d-flex flex-column">
+              <h1 class="h title__banner">Заказывайте все товары со <span class="span">скидкой до 70%</span></h1>
+              <p class="d subtitle__banner">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              </p>
+              <button class="btn-out btn__banner-main">
+                Подробнее <img class="btn__icon" src="./img/arrow-btn.svg"/>
+              </button>
+            </div>
+            <div class="col-md-5">
+              <img class="img__main" src="./img/banner-img.png" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+    </div>
+
+    <div class="card__directions container d-flex">
+      <div class="row card__name">
+        <div class="col-md-8 flex-column">
+          <h3 class="h title__card-directions">Для продавцов</h3>
+          <p class="d subtitle__card-directions">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet....</p>
+        </div>
+        <div class="col-md-4">
+          <img class="img__card-directions" src="./img/for-sallers.png"/>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+      <div class="row card__name">
+        <div class="col-md-8 flex-column">
+          <h3 class="h title__card-directions">Для пайщиков</h3>
+          <p class="d subtitle__card-directions">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet....</p>
+        </div>
+        <div class="col-md-4">
+          <img class="img__card-directions" src="./img/for-paishik.png"/>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="container d-flex">
-    
+  <section class="section  container">
+    <div class="section__title d-flex align-items-center">
+      <h2 class="h title__popular-card me-3">
+        Популярные товары
+      </h2>
+      <a href="/"><img class="arrow__link" src="./img/arrow-link.svg"/></a>
+    </div>
+
+    <div class="card__top row">
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="card">
+            <img src="./img/img__card.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./img/img__card.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./img/img__card.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section container">
+    <div class="section__title d-flex align-items-center">
+      <h2 class="h">
+        Почему мы лучшие?
+      </h2>
+    </div>
+
+    <div class="content__advantages row row-cols-1 row-cols-md-3">
+      <div class="col">
+        <div class="card fresh">
+          <img src="./img/fresh-img.png" class="card-img-top" alt="...">
+          <div class="card-body card__back-text">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="soft d-flex flex-column text-center">
+          <div class="soft__text">
+            <img class="soft__icon" src="./img/soft-icon.svg"/>
+            <h3 class="h">Удобство</h3>
+            <p class="d"> Забудьте о долгих походах по магазинам. Мы доставим ваш заказ прямо к двери, сэкономив вам время и усилия.</p>
+          </div>
+          <img class="soft__img" src="./img/soft-img.png"/>
+        </div>
+      </div>
+      <div class="col">
+        <div class="econom d-flex flex-column text-center">
+          <img class="soft__img" src="./img/soft-img.png"/>
+          <div class="soft__text">
+            <img class="soft__icon" src="./img/econom-icon.svg"/>
+            <h3 class="h">Экономия</h3>
+            <p class="d"> Наши цены всегда ниже, чем на рынке. Мы верим, что каждый заслуживает доступ к высококачественным продуктам, поэтому делаем их доступными для всех.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section__title d-flex align-items-center">
+      <h2 class="h">
+        Часто выбирают
+      </h2>
+    </div>
+
+    <div class="popular__category row">
+        <div class="col-md-7 categoty__left">
+          <div class="category__top d-flex flex-column">
+            <ul class="category__list d-flex">
+              <li class="item__card">
+                <h4>Рыба и морепродукты</h4>
+                <img/>
+              </li>
+              <li class="item__card">
+                <h4>Рыба и морепродукты</h4>
+                <img/>
+              </li>
+            </ul>
+            <div class="category__card">
+              <h4>Рыба и морепродукты</h4>
+              <img/>
+            </div>
+            <div class="category__card">
+              <h4>Рыба и морепродукты</h4>
+              <img/>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 categoty__right d-flex flex-column">
+          <div class="category__card">
+            <h4>Рыба и морепродукты</h4>
+            <img/>
+          </div>
+          <div class="category__card">
+            <h4>Рыба и морепродукты</h4>
+            <img/>
+          </div>
+        </div>
+    </div>
+    <button class="btn-out mt-5">
+      Все категории товаров <img class="btn__icon" src="./img/arrow-btn.svg"/>
+    </button>
+  </section>
+
+  <section class="section container">
+    <div class="banner content__banner row position-relative">
+      <div class="col-md-7 d-flex flex-column">
+        <h2 class="h title__banner">У нас действует <span class="span">реферальная программа</span></h2>
+        <p class="d subtitle__banner">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </p>
+        <button class="btn-out btn__banner-main">
+          Подробнее <img class="btn__icon" src="./img/arrow-btn.svg"/>
+        </button>
+      </div>
+      <div class="col-md-5">
+        <img class="img__main" src="./img/referal-img.png" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col">
+        <div class="section__title d-flex align-items-center">
+          <h2 class="h">
+            Lorem ipsum dolor sit amet, adipiscing elit
+          </h2>
+      </div>
+    </div>
+    <div class="col">
+      <div class="section__title d-flex align-items-center">
+        <h2 class="h">
+          Lorem ipsum dolor sit amet, adipiscing elit
+        </h2>
+    </div>
   </div>
+  </section>
+
 </body>
 
 </html>

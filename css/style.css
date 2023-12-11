@@ -5,28 +5,137 @@
   --color-back-primary: #E3F0DE;
 }
 
-.carousel__back {
-  border-radius: 20px;
-  background: #E3F0DE;
-}
+/* Общие стили */
 
-.content__banner {
-  padding-left: 40px;
-  padding: 40px;
-  padding: 40px;
-  padding-right: 0;
-}
-
-.h1 {
-  max-width: 744px;
+.h {
   color: var(--color-text);
   font-family: Lack;
-  font-size: 50px;
   font-style: normal;
   font-weight: 400;
-  line-height: 52px;
+}
+
+.d {
+  color: var(--color-text);
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .span {
   color: var(--color-text-primary);
 }
+
+.btn-out {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 15px 20px;
+}
+
+.section {
+  margin-bottom: 70px;
+}
+
+.section__title {
+  margin-bottom: 35px;
+}
+
+.banner {
+  background-color: var(--color-back-primary);
+  border-radius: 20px;
+}
+
+/* Стили для наших элементов */
+.title__banner {
+  font-size: 50px;
+  max-width: 750px;
+  line-height: 55px;
+  margin-bottom: 30px;
+}
+
+.subtitle__banner {
+  max-width: 650px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.carousel__back {
+  border-radius: 20px;
+  background: #E3F0DE;
+  padding: 0;
+}
+
+.content__banner {
+  padding-left: 60px;
+  padding: 60px;
+  padding: 60px;
+  padding-right: 0;
+}
+
+.img__main {
+  max-width: 520px;
+  height: 370px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  border-radius: 20px;
+}
+
+.btn__banner-main {
+  max-width: 180px;
+}
+
+.card__directions {
+  margin-top: 20px;
+}
+
+.card__name {
+  background-color: var(--color-back-primary);
+  margin-right: 20px;
+  padding: 35px;
+  padding-right: 0;
+  border-radius: 20px;
+}
+
+.card__name:last-child {
+  margin-right: 0px;
+}
+
+.img__card-directions {
+  object-fit: cover;
+  max-width: 160px;
+}
+
+.card__top {
+  margin-top: 35px;
+  padding-left: 10px;
+  gap: 20px;
+}
+
+
+.card__back-text {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+
+.soft__text {
+  background-image: url('../img/back-switch.svg');
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+
+/* Стили для элементов Бустрапа */
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--color-primary);
+  height: 5px;
+}
+
+.container {
+  padding-right: 0;
+}
+

@@ -215,6 +215,29 @@ ul {
   border-radius: 20px;
 }
 
+.btn__reviews{
+  margin: 0 auto;
+}
+
+.photo {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.personPhoto {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.list__rating {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
 /* Стили для элементов Бустрапа */
 
 .carousel-indicators [data-bs-target] {
@@ -230,3 +253,7 @@ ul {
   padding: 20px;
 }
 
+.accordion-button:not(.collapsed) {
+  color: var(--color-text);
+  background-color: var(--color-back-primary);
+}

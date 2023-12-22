@@ -1,59 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
-  <link href="./css/bootstrap-reboot.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
-  <link href="./fonts/Lack-Font.css">
+  <link rel="stylesheet" href="assets/css/main.css?v=5.6" />
+  <link href="./assets/fonts/Lack-Font.css">
   <title>Кооперация УРА</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="#">Навбар</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ссылка</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Выпадающий список
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Действие</a></li>
-              <li><a class="dropdown-item" href="#">Другое действие</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Отключенная</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
-          <button class="btn btn-outline-success" type="submit">Поиск</button>
-        </form>
+  <!-- Header -->
+  <header class="header-area header-style-1 header-height-2">
+    <div class="header-top header-top-ptb-1 d-none d-lg-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-3 col-lg-4">
+            <div class="search-location">
+              <form action="#">
+                <select class="select-active">
+                  <option>Местоположение</option>
+                  <option>Alabama</option>
+                  <option>Alaska</option>
+                  <option>Arizona</option>
+                  <option>Delaware</option>
+                  <option>Florida</option>
+                  <option>Georgia</option>
+                  <option>Hawaii</option>
+                  <option>Indiana</option>
+                  <option>Maryland</option>
+                  <option>Nevada</option>
+                  <option>New Jersey</option>
+                  <option>New Mexico</option>
+                  <option>New York</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
+    <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
+      <div class="container">
+        <div class="header-wrap">
+          <div class="logo logo-width-1">
+            <a href="index.html"><img src="./assets/img/icon/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="main-categori-wrap d-none d-lg-block">
+            <a class="categories-button-active" href="#">
+              <img class="categories-icon mr-10" src="./assets/img/icon/Category.svg" />
+              <p class="mr-25 categories-text">Каталог</p>
+            </a>
+            <div class="categories-dropdown-wrap categories-dropdown-active-large font-heading">
+              <div class="d-flex categori-dropdown-inner">
+                <ul>
+                  <li>
+                    <a href="categories.html">Рыба и
+                      морепродукты</a>
+                  </li>
+                  <li>
+                    <a href="categories.html">Хлеб и
+                      выпечка</a>
+                  </li>
+                  <li>
+                    <a href="categories.html">Мясо и
+                      птица</a>
+                  </li>
+                  <li>
+                    <a href="categories.html">Молочные
+                      продукты, яйца</a>
+                  </li>
+                  <li>
+                    <a href="categories.html">Овощи и
+                      зелень</a>
+                  </li>
+                </ul>
+                <ul class="end">
+                  <li>
+                    <a href="categories.html">Фрукты и
+                      ягоды</a>
+                  </li>
+                  <li>
+                    <a href="categories.html">Сладости
+                      и десерты</a>
+                  </li>
+                  <li>
+                    <a href="categories.html">Замороженные продукты</a>
+                  </li>
+                  <li>
+                    <a href="categories.html">Орехи
+                      Чипсы снеки</a>
+                  </li>
+                  <li>
+                    <a href="categories.html">Крупы,
+                      макароны, мука</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="more_slide_open">
+                <div class="d-flex categori-dropdown-inner">
+                  <ul>
+                    <li>
+                      <a href="categories.html">Масло,
+                        соусы, сахар и соль</a>
+                    </li>
+                    <li>
+                      <a href="categories.html">Чай и
+                        кофе</a>
+                    </li>
+                  </ul>
+                  <ul class="end">
+                    <li>
+                      <a href="categories.html">Здоровье</a>
+                    </li>
+                    <li>
+                      <a href="categories.html">Колбасы и
+                        мясные деликатесы</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="more_categories"><span class="icon"></span> <span class="heading-sm-1">Больше</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="search-style-2">
+              <form action="#">
+                <select class="select-active">
+                  <option>Все</option>
+                  <option>Рыба и морепродукты</option>
+                  <option>Хлеб и выпечка</option>
+                  <option>Мясо и птица</option>
+                  <option>Молочные продукты, яйца</option>
+                  <option>Овощи и зелень</option>
+                  <option>Фрукты и ягоды</option>
+                </select>
+                <input type="text" placeholder="Поиск" />
+              </form>
+            </div>
 
-  <section class="section">
-    <div id="carouselExampleIndicators" class="carousel slide container carousel__back mt-5">
+            <div class="header-action-right">
+              <div class="header-action-2">
+                <div class="header-action-icon-2">
+                  <a href="shop-catalog.html">
+                    <img class="svgInject" alt="Nest" src="./assets/img/icon/Cart.svg" />
+                    <span class="pro-count blue">3</span>
+                  </a>
+                  <a href="shop-catalog.html"><span class="lable ml-0">Корзина</span></a>
+                </div>
+                <div class="header-action-icon-2">
+                  <a href="/">
+                    <img class="svgInject" alt="Nest" src="./assets/img/icon/sign.svg " />
+                  </a>
+                  <a href="/"><span class="lable">Войти</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom sticky-bar">
+      <div class="container">
+        <div class="header-wrap header-space-between position-relative">
+          <div class="header-nav d-none d-lg-flex">
+            <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="/">Доставка</a>
+                  </li>
+                  <li>
+                    <a href="/">Бренды</a>
+                  </li>
+                  <li>
+                    <a href="/">Для продавцов</a>
+                  </li>
+                  <li class="position-static">
+                    <a href="/">Для пайщиков</a>
+                  </li>
+                  <li>
+                    <a href="/">Реферальная программа</a>
+                  </li>
+                  <li>
+                    <a href="/">О компании</a>
+                  </li>
+                  <li>
+                    <a href="news-page.html">Новости</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header-action-icon-2 d-block d-lg-none">
+            <div class="burger-icon burger-icon-white">
+              <span class="burger-icon-top"></span>
+              <span class="burger-icon-mid"></span>
+              <span class="burger-icon-bottom"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section mt-50 container">
+    <div id="carouselExampleIndicators" class="carousel slide carousel__back mt-5">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -74,11 +227,8 @@
                 consequat.
               </p>
               <button class="btn-out btn__banner-main">
-                Подробнее <img class="btn__icon" src="./img/arrow-btn.svg" />
+                Подробнее <img class="btn__icon" src="./assets/img/icon/arrow-btn.svg" />
               </button>
-            </div>
-            <div class="col-md-5">
-              <img class="img__main" src="./img/banner-img.png" />
             </div>
           </div>
         </div>
@@ -91,84 +241,181 @@
       </div>
     </div>
 
-    <div class="card__directions container d-flex">
-      <div class="row card__name">
-        <a href="/" class="col-md-8 flex-column">
+    <div class="card__directions d-flex">
+      <div class="card__name">
+        <a href="/" class="flex-column">
           <h3 class="h title__card-directions mb-3">Для продавцов</h3>
           <p class="d subtitle__card-directions">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet....</p>
         </a>
-        <div class="col-md-4">
-          <img class="img__card-directions" src="./img/for-sallers.png" />
+        <div>
+          <img class="img__card-directions" src="./assets/img/directions/for-sallers.png" />
         </div>
       </div>
-      <div class="row card__name">
-        <a href="/" class="col-md-8 flex-column">
+      <div class="card__name">
+        <a href="/" class="flex-column">
           <h3 class="h title__card-directions mb-3">Для пайщиков</h3>
           <p class="d subtitle__card-directions">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet....</p>
         </a>
-        <div class="col-md-4">
-          <img class="img__card-directions" src="./img/for-paishik.png" />
+        <div>
+          <img class="img__card-directions" src="./assets/img/directions/for-paishik.png" />
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section  container">
+  <section class="section container">
     <div class="section__title d-flex align-items-center">
       <h2 class="h title__popular-card me-3">
         Популярные товары
       </h2>
-      <a href="/"><img class="arrow__link" src="./img/arrow-link.svg" /></a>
+      <a href="/"><img class="arrow__link" src="./assets/img/icon/arrow-btn.svg" /></a>
     </div>
 
+    <!-- card-product -->
     <div class="card__top row">
       <div class="row row-cols-1 row-cols-md-3">
-        <div class="col">
-          <div class="card">
-            <img src="./img/img__card.png" class="card-img-top w-100" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Мясная тарелка со с пециями</h5>
-              <span class="card__maker">от «Мясной фабрики»</span>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <button class="btn-fill mt-5">
-                Добавить в корзину <img class="btn__icon" src="./img/arrow-btn-light.svg" />
-              </button>
+        <div class="col-md-4 col-12 col-sm-6">
+          <div class="product-cart-wrap mb-30">
+            <div class="product-img-action-wrap">
+              <div class="product-img product-img-zoom">
+                <a href="shop-product.html">
+                  <img class="default-img" src="./assets/img/shop/product-13-1.jpg" alt="" />
+                  <img class="hover-img" src="./assets/img/shop/product-13-2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="product-badges product-badges-position product-badges-mrg">
+                <img src="./assets/img/icon/sale.svg" />
+              </div>
+              <div class="product-save product-save-position product-save-mrg">
+                <img src="./assets/img/icon/favorite.svg" />
+              </div>
+            </div>
+            <div class="product-content-wrap">
+              <h2><a href="shop-product.html">Банановый напиток</a></h2>
+              <div class="product-category">
+                <a href="shop-grid-right.html">Банановая фабрика</a>
+              </div>
+              <p class="product-about-text">Описание: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <div class="d-flex justify-content-between mt-25">
+                <div class="product-price">
+                  <span>1.780р</span>
+                  <span class="old-price">1.345р</span>
+                </div>
+                <div class="product-detail-rating">
+                  <div class="product-rate-cover text-end">
+                    <div class="product-rate d-inline-block">
+                      <div class="product-rating"></div>
+                    </div>
+                    <span class="font-small ml-5 text-muted"> (32 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-bottom">
+                <button class="btn-fill btn__product">
+                  Добавить в корзину <img class="btn__icon" src="./assets/img/icon/arrow-btn-light.svg" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="./img/img__card.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <button class="btn-fill mt-5">
-                Добавить в корзину <img class="btn__icon" src="./img/arrow-btn-light.svg" />
-              </button>
+
+        <div class="col-md-4 col-12 col-sm-6">
+          <div class="product-cart-wrap mb-30">
+            <div class="product-img-action-wrap">
+              <div class="product-img product-img-zoom">
+                <a href="shop-product.html">
+                  <img class="default-img" src="./assets/img/shop/product-13-1.jpg" alt="" />
+                  <img class="hover-img" src="./assets/img/shop/product-13-2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="product-badges product-badges-position product-badges-mrg">
+                <img src="./assets/img/icon/sale.svg" />
+              </div>
+              <div class="product-save product-save-position product-save-mrg">
+                <img src="./assets/img/icon/favorite.svg" />
+              </div>
+            </div>
+            <div class="product-content-wrap">
+              <h2><a href="shop-product-right.html">Банановый напиток</a></h2>
+              <div class="product-category">
+                <a href="shop-grid-right.html">Банановая фабрика</a>
+              </div>
+              <p class="product-about-text">Описание: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <div class="d-flex justify-content-between mt-25">
+                <div class="product-price">
+                  <span>1.780р</span>
+                  <span class="old-price">1.345р</span>
+                </div>
+                <div class="product-detail-rating">
+                  <div class="product-rate-cover text-end">
+                    <div class="product-rate d-inline-block">
+                      <div class="product-rating"></div>
+                    </div>
+                    <span class="font-small ml-5 text-muted"> (32 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-bottom">
+                <button class="btn-fill btn__product">
+                  Добавить в корзину <img class="btn__icon" src="./assets/img/icon/arrow-btn-light.svg" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="./img/img__card.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
-              <button class="btn-fill mt-5">
-                Добавить в корзину <img class="btn__icon" src="./img/arrow-btn-light.svg" />
-              </button>
+
+        <div class="col-md-4 col-12 col-sm-6">
+          <div class="product-cart-wrap mb-30">
+            <div class="product-img-action-wrap">
+              <div class="product-img product-img-zoom">
+                <a href="shop-product.html">
+                  <img class="default-img" src="./assets/img/shop/product-13-1.jpg" alt="" />
+                  <img class="hover-img" src="./assets/img/shop/product-13-2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="product-badges product-badges-position product-badges-mrg">
+                <img src="./assets/img/icon/sale.svg" />
+              </div>
+              <div class="product-save product-save-position product-save-mrg">
+                <img src="./assets/img/icon/favorite.svg" />
+              </div>
+            </div>
+            <div class="product-content-wrap">
+              <h2><a href="shop-product-right.html">Банановый напиток</a></h2>
+              <div class="product-category">
+                <a href="shop-grid-right.html">Банановая фабрика</a>
+              </div>
+              <p class="product-about-text">Описание: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <div class="d-flex justify-content-between mt-25">
+                <div class="product-price">
+                  <span>1.780р</span>
+                  <span class="old-price">1.345р</span>
+                </div>
+                <div class="product-detail-rating">
+                  <div class="product-rate-cover text-end">
+                    <div class="product-rate d-inline-block">
+                      <div class="product-rating"></div>
+                    </div>
+                    <span class="font-small ml-5 text-muted"> (32 reviews)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-bottom">
+                <button class="btn-fill btn__product">
+                  Добавить в корзину <img class="btn__icon" src="./assets/img/icon/arrow-btn-light.svg" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
   <section class="section container">
     <div class="section__title d-flex align-items-center">
@@ -179,36 +426,36 @@
 
     <div class="content__advantages row row-cols-1 row-cols-md-3">
       <div class="col">
-        <div class="card fresh">
-          <img src="./img/fresh-img.png" class="card-img-top" alt="...">
-          <div class="card-body card__back-text">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content.</p>
+        <div class="card">
+          <img src="./assets/img/advantages/fresh-img.png" class="card-img-top" alt="...">
+          <div class="card-body__fresh card__back-text">
+            <h5 class="card-title text-white">Свежесть</h5>
+            <p class="card-text text-white">Мы выбираем только лучших производителей и поставщиков по регионам, чтобы
+              гарантировать
+              вам самые свежие и качественные продукты.</p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="soft d-flex flex-column text-center align-items-center">
           <div class="soft__text">
-            <img class="soft__icon" src="./img/soft-icon.svg" />
+            <img class="soft__icon" src="./assets/img/icon/soft-icon.svg" />
             <h3 class="h soft__title">Удобство</h3>
             <p class="d soft__description"> Забудьте о долгих походах по магазинам.<br /> Мы доставим ваш заказ прямо к
               двери, сэкономив вам
               время и усилия.</p>
           </div>
-          <img class="soft__img w-100" src="./img/soft-img.png" />
+          <img class="soft__img w-100" src="./assets/img/advantages/soft-img.png" />
         </div>
       </div>
       <div class="col">
         <div class="econom d-flex flex-column text-center align-items-center">
-          <img class="soft__img w-100 mb-4" src="./img/soft-img.png" />
+          <img class="soft__img w-100 mb-4" src="./assets/img/advantages/econom-img.png" />
           <div class="soft__text">
-            <img class="soft__icon" src="./img/econom-icon.svg" />
+            <img class="soft__icon" src="./assets/img/icon/econom-icon.svg" />
             <h3 class="h soft__title">Экономия</h3>
             <p class="d soft__description"> Наши цены всегда ниже, чем на рынке. Мы верим, что каждый заслуживает доступ
-              к
-              высококачественным продуктам, поэтому делаем их доступными для всех.</p>
+              к высококачественным продуктам, поэтому делаем их доступными для всех.</p>
           </div>
         </div>
       </div>
@@ -225,40 +472,73 @@
     <div class="popular__category row">
       <div class="col-md-7 categoty__left">
         <div class="category__top d-flex flex-column">
-          <ul class="category__list d-flex">
-            <li class="item__card">
-              <h4>Рыба и морепродукты</h4>
-              <img />
-            </li>
-            <li class="item__card">
-              <h4>Рыба и морепродукты</h4>
-              <img />
-            </li>
-          </ul>
-          <div class="category__card">
-            <h4>Рыба и морепродукты</h4>
-            <img />
+          <div class="category__list mb-25">
+            <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
+              <img src="./assets/img/category/seafood.png" alt="" />
+              <div class="banner-text">
+                <h4>
+                  Рыба и морепродукты
+                </h4>
+              </div>
+            </div>
+            <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
+              <img src="./assets/img/category/breadfood.png" alt="" />
+              <div class="banner-text">
+                <h4>
+                  Хлеб и выпечка
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="category__card mb-25">
+            <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
+              <img src="./assets/img/category/milkfood.png" alt="" />
+              <div class="banner-text">
+                <h4>
+                  Молочные продукты, яйца
+                </h4>
+              </div>
+            </div>
           </div>
           <div class="category__card">
-            <h4>Рыба и морепродукты</h4>
-            <img />
+            <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
+              <img src="./assets/img/category/vegetablesfood.png" alt="" />
+              <div class="banner-text">
+                <h4>
+                  Овощи и зелень
+                </h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-5 categoty__right d-flex flex-column">
+      <div class="col-md-5 categoty__right">
         <div class="category__card">
-          <h4>Рыба и морепродукты</h4>
-          <img />
+          <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
+            <img src="./assets/img/category/beeffood.png" alt="" />
+            <div class="banner-text">
+              <h4>
+                Мясо и птица
+              </h4>
+            </div>
+          </div>
         </div>
         <div class="category__card">
-          <h4>Рыба и морепродукты</h4>
-          <img />
+          <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
+            <img src="./assets/img/category/fruitfood.png" alt="" />
+            <div class="banner-text">
+              <h4>
+                Фрукты и ягоды
+              </h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <button class="btn-out mt-5">
-      Все категории товаров <img class="btn__icon" src="./img/arrow-btn.svg" />
+    <button class="btn-out mt-25 justify-content-center btn__reviews">
+      Все категории товаров <img class="btn__icon" src="./assets/img/icon/arrow-btn.svg" />
     </button>
   </section>
 
@@ -272,11 +552,8 @@
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
         <button class="btn-out btn__banner-main">
-          Подробнее <img class="btn__icon" src="./img/arrow-btn.svg" />
+          Подробнее <img class="btn__icon" src="./assets/img/icon/arrow-btn.svg" />
         </button>
-      </div>
-      <div class="col-md-5">
-        <img class="img__main" src="./img/referal-img.png" />
       </div>
     </div>
   </section>
@@ -288,8 +565,8 @@
           <h2 class="h news__title">
             Lorem ipsum dolor sit amet, adipiscing elit
           </h2>
-          <img src="./img/newBig-img.png" class="w-100" />
-          <a href="/" class="news__btn"><img src="./img/new-btn.svg" alt="title"></a>
+          <img src="./assets/img/blog/newBig-img.png" class="w-100" />
+          <a href="/" class="news__btn"><img src="./assets/img/icon/new-btn.svg" alt="title"></a>
         </div>
       </div>
       <div class="col">
@@ -300,12 +577,12 @@
               Ullam aut iste ea, assumenda molestias possimus reiciendis at,
               dicta itaque quod, perspiciatis eveniet?</p>
             <button class="btn-out btn__banner-main">
-              Подробнее <img class="btn__icon" src="./img/arrow-btn.svg" />
+              Подробнее <img class="btn__icon" src="./assets/img/icon/arrow-btn.svg" />
             </button>
           </div>
           <ul class="news__list">
             <li class="new__item d-flex">
-              <img class="item__img" src="./img/news-img.png" />
+              <img class="item__img" src="./assets/img/blog/news-img.png" />
               <div class="item__text d-flex flex-column">
                 <h5 class="h item__title">Lorem ipsum dolor sit amet</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -313,7 +590,7 @@
               </div>
             </li>
             <li class="new__item d-flex">
-              <img class="item__img" src="./img/news-img.png" />
+              <img class="item__img" src="./assets/img/blog/news-img.png" />
               <div class="item__text d-flex flex-column">
                 <h5 class="h item__title">Lorem ipsum dolor sit amet</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -321,7 +598,7 @@
               </div>
             </li>
             <li class="new__item d-flex">
-              <img class="item__img" src="./img/news-img.png" />
+              <img class="item__img" src="./assets/img/blog/news-img.png" />
               <div class="item__text d-flex flex-column">
                 <h5 class="h item__title">Lorem ipsum dolor sit amet</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -346,30 +623,16 @@
         <div class="card card-rewiews">
           <div class="card-body">
             <div class="row mb-3">
-              <article class="col-md-2">
-                <div class="photo">
-                  <img class="personPhoto" alt="" src="./img/man-rewiews.jpg">
-                </div>
-              </article>
               <div class="col-md-10 d-flex flex-column">
                 <h5 class="card-title mb-0">Card title</h5>
-                <ul class="list__rating">
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star-outline.svg" />
-                  </li>
-                </ul>
+                <div class="product-detail-rating">
+                  <div class="product-rate-cover text-end">
+                    <div class="product-rate d-inline-block">
+                      <div class="product-rating"></div>
+                    </div>
+                    <span class="font-small ml-5 text-muted"> (32 reviews)</span>
+                  </div>
+                </div>
               </div>
             </div>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -381,30 +644,16 @@
         <div class="card card-rewiews">
           <div class="card-body">
             <div class="row mb-3">
-              <article class="col-md-2">
-                <div class="photo">
-                  <img class="personPhoto" alt="" src="./img/man-rewiews.jpg">
-                </div>
-              </article>
               <div class="col-md-10 d-flex flex-column">
                 <h5 class="card-title mb-0">Card title</h5>
-                <ul class="list__rating">
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star-outline.svg" />
-                  </li>
-                </ul>
+                <div class="product-detail-rating">
+                  <div class="product-rate-cover text-end">
+                    <div class="product-rate d-inline-block">
+                      <div class="product-rating"></div>
+                    </div>
+                    <span class="font-small ml-5 text-muted"> (32 reviews)</span>
+                  </div>
+                </div>
               </div>
             </div>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -416,30 +665,16 @@
         <div class="card card-rewiews">
           <div class="card-body">
             <div class="row mb-3">
-              <article class="col-md-2">
-                <div class="photo">
-                  <img class="personPhoto" alt="" src="./img/man-rewiews.jpg">
-                </div>
-              </article>
               <div class="col-md-10 d-flex flex-column">
                 <h5 class="card-title mb-0">Card title</h5>
-                <ul class="list__rating">
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star.svg" />
-                  </li>
-                  <li class="item__icon">
-                    <img src="./img/star-outline.svg" />
-                  </li>
-                </ul>
+                <div class="product-detail-rating">
+                  <div class="product-rate-cover text-end">
+                    <div class="product-rate d-inline-block">
+                      <div class="product-rating"></div>
+                    </div>
+                    <span class="font-small ml-5 text-muted"> (32 reviews)</span>
+                  </div>
+                </div>
               </div>
             </div>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -448,8 +683,8 @@
         </div>
       </div>
     </div>
-    <button class="btn-out mt-5 justify-content-center btn__reviews">
-      Больше отзывов <img class="btn__icon" src="./img/arrow-btn.svg" />
+    <button class="btn-out mt-25 justify-content-center btn__reviews">
+      Больше отзывов <img class="btn__icon" src="./assets/img/icon/arrow-btn.svg" />
     </button>
   </section>
 
@@ -518,8 +753,108 @@
     </div>
   </section>
 
-  <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/bootstrap.bundle.min.js.map"></script>
+  <!-- footer -->
+  <footer class="main">
+    <section class="section mb-0 footer-mid footer__back">
+      <div class="container pt-30 pb-20">
+        <div class="row">
+          <div class="col">
+            <div class="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0 wow animate__animated animate__fadeInUp"
+              data-wow-delay="0">
+              <div class="logo mb-30">
+                <a href="index.html" class="mb-15"><img src="./assets/img/icon/logo-white.svg" alt="logo" /></a>
+              </div>
+              <ul class="contact-infor">
+                <li><span>+7(999) 999 - 99-99</span></li>
+                <li><span>info@example.ru</span></li>
+              </ul>
+              <ul class="contact-social mt-25">
+                <li><img src="./assets/img/icon/telegram.svg" /></li>
+                <li><img src="./assets/img/icon/whatsap.svg" /></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-link-widget col wow animate__animated animate__fadeInUp" data-wow-delay=.1s>
+            <h4 class="widget-title">О Компании</h4>
+            <ul class="footer-list mb-sm-5 mb-md-0">
+              <li><a href="#">Карта сайта</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Преимущества</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-widget col wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+            <h4 class="widget-title">Информация</h4>
+            <ul class="footer-list mb-sm-5 mb-md-0">
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Возврат</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-widget col wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+            <h4 class="widget-title">Обратная связь</h4>
+            <ul class="footer-list mb-sm-5 mb-md-0">
+              <li><a href="#">Вопрос-ответ</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Задать вопрос</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-widget col wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
+            <h4 class="widget-title">Способы оплаты</h4>
+            <ul class="footer-info-bank">
+              <li><img src="./assets/img/icon/visa.svg" /></li>
+              <li><img src="./assets/img/icon/mastercard.svg" /></li>
+              <li><img src="./assets/img/icon/mir.svg" /></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container mt-50  pb-30 wow animate__animated animate__fadeInUp" data-wow-delay="0">
+          <div class="row align-items-center">
+            <div class="col-12 mb-30">
+              <div class="footer-bottom"></div>
+            </div>
+            <div class="col-xl-2 col-lg-6 col-md-6">
+              <p class="font-sm mb-0 text-white">&copy; 2023 - Lorem ipsum dolor sit amet, adipiscing elit</p>
+            </div>
+            <div class="col-xl-10 col-lg-6 col-md-6 text-end d-flex d-md-block">
+              <ul class="footer-doc mb-sm-5 mb-md-0 d-flex justify-content-between">
+                <li><a class="text-white" href="#">Обработка персональных данных</a></li>
+                <li><a class="text-white" href="#">Политика конфиденциальности </a></li>
+                <li><a class="text-white" href="#">Оферта</a></li>
+                <li><a class="text-white" href="#">Политика обработки данных</a></li>
+                <li><a class="text-white" href="#">Правила пользования сайтом</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+  </footer>
+
+  <!-- Vendor JS-->
+  <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/plugins/slick.js"></script>
+  <script src="assets/js/plugins/jquery.syotimer.min.js"></script>
+  <script src="assets/js/plugins/wow.js"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.js"></script>
+  <script src="assets/js/plugins/magnific-popup.js"></script>
+  <script src="assets/js/plugins/select2.min.js"></script>
+  <script src="assets/js/plugins/waypoints.js"></script>
+  <script src="assets/js/plugins/counterup.js"></script>
+  <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+  <script src="assets/js/plugins/images-loaded.js"></script>
+  <script src="assets/js/plugins/isotope.js"></script>
+  <script src="assets/js/plugins/scrollup.js"></script>
+  <script src="assets/js/plugins/jquery.vticker-min.js"></script>
+  <script src="assets/js/plugins/jquery.theia.sticky.js"></script>
+  <script src="assets/js/plugins/jquery.elevatezoom.js"></script>
+  <!-- Template  JS -->
+  <script src="./assets/js/main.js?v=5.6"></script>
+  <script src="./assets/js/shop.js?v=5.6"></script>
 </body>
 
 </html>

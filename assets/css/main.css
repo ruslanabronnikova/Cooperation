@@ -150,6 +150,9 @@ img {
 
 .span {
   color: var(--color-text-primary);
+  font-family: Lack;
+  font-style: normal;
+  font-weight: 400;
 }
 
 *:focus,
@@ -355,7 +358,7 @@ input[type=number]:focus,
 }
 
 .text-brand {
-  color: var(--color-primary)!important;
+  color: var(--color-primary) !important;
 }
 
 .text-white {
@@ -789,7 +792,7 @@ h2 {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: Lack;
   font-style: normal;
   font-weight: 400;
@@ -1004,6 +1007,19 @@ h5.widget-title {
 .btn-out {
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 11px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-out-white {
+  color: white;
+  border: 1px solid white;
   border-radius: 10px;
   background-color: transparent;
   padding: 15px 20px;
@@ -1945,7 +1961,7 @@ input.qty-val {
 }
 
 .hero-slider-1 .slider-content p {
-  font-size: 30px;
+  font-size: 14px;
 }
 
 .hero-slider-1 .slider-content form {
@@ -2370,13 +2386,12 @@ input.qty-val {
 
 .card-2 {
   position: relative;
-  background: #F4F6FA;
+  background: transparent;
   text-align: center;
   border: 1px solid #F4F6FA;
   border-radius: 10px;
   padding: 20px 0px 18px 0px;
   margin-bottom: 20px;
-  min-height: 180px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -5178,7 +5193,7 @@ table .product-thumbnail img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .detail-extralink .detail-qty {
@@ -5692,9 +5707,9 @@ table.no-border thead {
   border-radius: 10px;
 }
 
-.payment_option{
+.payment_option {
   display: grid;
-  grid-template-columns: repeat(2, 300px) ;
+  grid-template-columns: repeat(2, 300px);
   column-gap: 10px;
 }
 
@@ -7644,31 +7659,6 @@ h6.post-title {
   align-self: center;
 }
 
-.cart-dropdown-wrap .shopping-cart-footer .shopping-cart-button a {
-  display: inline-block;
-  font-size: 14px;
-  color: #ffffff;
-  border-radius: 4px;
-  line-height: 1;
-  padding: 10px 20px;
-  background-color: #669374;
-  font-family: "Inter", sans-serif;
-  border: 2px solid #669374;
-}
-
-.cart-dropdown-wrap .shopping-cart-footer .shopping-cart-button a.outline {
-  background-color: transparent;
-  border: 2px solid #669374;
-  color: #669374;
-}
-
-.cart-dropdown-wrap .shopping-cart-footer .shopping-cart-button a.outline:hover {
-  color: #ffffff;
-}
-
-.cart-dropdown-wrap .shopping-cart-footer .shopping-cart-button a:hover {
-  background-color: #FDC040;
-}
 
 .sticky-bar.stick {
   -webkit-animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -12873,6 +12863,7 @@ footer .hotline img {
 
 
 /* Стили для наших элементов */
+
 .title__banner {
   font-size: 50px;
   max-width: 750px;
@@ -13064,3 +13055,183 @@ footer .hotline img {
   color: white;
 }
 
+.main-salers {
+  background-color: var(--color-back-primary);
+  border-radius: 20px;
+  padding: 50px;
+  padding-bottom: 70px;
+}
+
+.salers-main-cta {
+  background-image: url('../../assets/img/salers/salers-main.png');
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.salers-main-btn {
+  max-width: 178px;
+  height: 50px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.salers-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.salers-card {
+  background-color: var(--color-back-primary);
+  border-radius: 20px;
+  padding: 33px 35px;
+}
+
+.salers-logo-company {
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+  padding: 35px;
+  background-color: transparent;
+  margin-right: 30px;
+}
+
+.salers-coop-img {
+  border-radius: 20px;
+}
+
+.salers-coop-description {
+  max-width: 600px;
+}
+
+.salers-card-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  padding: 35px 50px;
+}
+
+.salers-card-bottom .d {
+  max-width: 292px;
+}
+
+.salers-card-bottom .title {
+  max-width: 250px;
+}
+
+.paishik-description {
+  max-width: 625px;
+}
+
+.paishik-who-img {
+  border-radius: 20px;
+}
+
+.paishik-lists {
+  padding: 0;
+}
+
+.paishik-card {
+  padding: 60px 45px;
+}
+
+.paishik-item {
+  padding: 40px;
+}
+
+.bg-01 {
+  background-color: var(--color-back-primary);
+  border-radius: 20px;
+}
+
+.bg-02 {
+  background-color: var(--color-primary);
+  border-radius: 20px;
+}
+
+.referal-about {
+  padding: 55px 40px;
+  padding-bottom: 140px;
+}
+
+.referal-programm-img {
+  border-radius: 20px;
+}
+
+.referal-card-advent {
+  padding: 80px 35px;
+}
+
+.referal-money-container {
+  background-color: var(--color-back-primary);
+  border-radius: 20px;
+  padding: 35px;
+}
+
+.banner__main-01 {
+  background-image: url('../../assets/img/slider/slider-1.png');
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.banner__main-02 {
+  background-image: url('../../assets/img/slider/slider-2.png');
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.banner__main-delivery {
+  background-image: url('../../assets/img/delivery/slider-delivery.png');
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.banner__main-referal {
+  background-image: url('../../assets/img/referal/slider-referal.png');
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.delivery-numb-lists {
+  display: grid;
+  grid-template-columns: repeat(2, 260px);
+  grid-template-rows: repeat(2, 163px);
+  gap: 60px;
+  margin-left: 35px;
+}
+
+.item-numb-01 {
+  background-image: url('../../assets/img/icon/delivery-01.svg');
+  object-fit: cover;
+}
+
+.item-numb-02 {
+  background-image: url('../../assets/img/icon/delivery-02.svg');
+  object-fit: cover;
+}
+
+.item-numb-03 {
+  background-image: url('../../assets/img/icon/delivery-03.svg');
+  object-fit: cover;
+}
+
+.item-numb-04 {
+  background-image: url('../../assets/img/icon/delivery-04.svg');
+  object-fit: cover;
+}
+
+.delivery-card-top {
+  position: absolute;
+  padding: 25px 25px;
+}
+
+.delivery-card-top .d {
+  max-width: 292px;
+}
+
+.delivery-card-top .title {
+  max-width: 250px;
+}

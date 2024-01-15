@@ -257,6 +257,89 @@
     </div>
   </header>
 
+  <!-- Header mob -->
+  <div class="mobile-header-active mobile-header-wrapper-style">
+    <div class="mobile-header-wrapper-inner">
+      <div class="mobile-header-top">
+        <div class="mobile-header-logo">
+          <a href="index.html"><img src="./assets/img/icon/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
+          <button class="close-style search-close">
+            <i class="icon-top"></i>
+            <i class="icon-bottom"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-header-content-area">
+        <div class="mobile-search search-style-3 mobile-header-border">
+          <form action="#">
+            <input type="text" placeholder="Поиск" />
+            <button type="submit"><i class="fi-rs-search"></i></button>
+          </form>
+        </div>
+        <div class="mobile-menu-wrap mobile-header-border">
+          <!-- mobile menu start -->
+          <nav>
+            <ul class="mobile-menu font-heading">
+              <li class="menu-item-has-children">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="index.html">Каталог</a>
+                <ul class="dropdown">
+                  <li> <a href="categories.html">Рыба и
+                      морепродукты</a></li>
+                  <li> <a href="categories.html">Хлеб и
+                      выпечка</a></li>
+                  <li> <a href="categories.html">Мясо и
+                      птица</a></li>
+                  <li> <a href="categories.html">Молочные
+                      продукты, яйца</a></li>
+                  <li> <a href="categories.html">Овощи и
+                      зелень</a></li>
+                  <li> <a href="categories.html">Фрукты и
+                      ягоды</a></li>
+                </ul>
+              </li>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Для продавцов</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Для пайщиков</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Реферальная программа</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">О компании</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Новости</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- mobile menu end -->
+        </div>
+        <div class="mobile-header-info-wrap">
+          <div class="single-mobile-header-info">
+            <a href="page-contact.html"><i class="fi-rs-marker"></i> Местоположение </a>
+          </div>
+          <div class="single-mobile-header-info">
+            <a href="page-contact.html"><i class="fi-rs-marker"></i> Корзина </a>
+          </div>
+          <div class="single-mobile-header-info">
+            <a href="page-login.html"><i class="fi-rs-user"></i>Войти </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section class="section container mt-50">
     <div id="carouselExampleIndicators" class="carousel slide carousel__back mt-5">
       <div class="carousel-inner border-radius-20">
@@ -288,27 +371,27 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-xxl-5 col-xl-5 сol-md-12 col-12">
         <ul class="salers-cards-list">
-          <li class="d-flex flex-column salers-card">
-            <h3 class="title mb-10">Lorem ipsum dolor sit amet</h3>
-            <p class="d">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          <li class="d-flex flex-column delivery-card-left">
+            <h3 class="mb-10">Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur. </p>
           </li>
-          <li class="d-flex flex-column salers-card">
-            <h3 class="title mb-10">Lorem ipsum dolor sit amet</h3>
-            <p class="d">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          <li class="d-flex flex-column delivery-card-left">
+            <h3 class="mb-10">Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur. </p>
           </li>
-          <li class="d-flex flex-column salers-card">
-            <h3 class="title mb-10">Lorem ipsum dolor sit amet</h3>
-            <p class="d">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          <li class="d-flex flex-column delivery-card-left">
+            <h3 class="mb-10">Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -316,15 +399,8 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-6 d-flex position-relative">
-        <div class="delivery-card-top bg-02">
-          <h4 class="title text-white mb-10">Lorem ipsum dolor sit amet</h4>
-          <p class="d text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. </p>
-        </div>
-        <img class="w-100" src="./assets/img/delivery/delivery-var.png" />
+      <div class="col-xxl-7 col-xl-7 сol-md-12 col-12">
+        <img class="border-radius-20 delivery-img-right w-100" src="./assets/img/delivery/delivery-var.jpg" />
       </div>
     </div>
   </section>
@@ -337,10 +413,10 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-xxl-6 col-xl-6 сol-md-12 col-12">
         <img class="border-radius-20 w-100" src="./assets/img/delivery/delivery-uslovia.png" />
       </div>
-      <div class="col-md-6">
+      <div class="col-xxl-6 col-xl-6 сol-md-12 col-12">
         <ul class="delivery-numb-lists">
           <li class="item-numb-01">
             <h4 class="title mb-10">Экономия</h4>
@@ -429,18 +505,18 @@
             <div class="col-12 mb-30">
               <div class="footer-bottom"></div>
             </div>
-            <div class="col-xl-2 col-lg-6 col-md-6">
+            <div class="col-xl-12 col-lg-6 col-md-6">
               <p class="font-sm mb-0 text-white">&copy; 2023 - Lorem ipsum dolor sit amet, adipiscing elit</p>
             </div>
-            <div class="col-xl-10 col-lg-6 col-md-6 text-end d-flex d-md-block">
-              <ul class="footer-doc mb-sm-5 mb-md-0 d-flex justify-content-between">
-                <li><a class="text-white" href="#">Обработка персональных данных</a></li>
-                <li><a class="text-white" href="#">Политика конфиденциальности </a></li>
-                <li><a class="text-white" href="#">Оферта</a></li>
-                <li><a class="text-white" href="#">Политика обработки данных</a></li>
-                <li><a class="text-white" href="#">Правила пользования сайтом</a></li>
-              </ul>
-            </div>
+          </div>
+          <div class="col-xl-10 col-lg-6 col-md-6 d-flex d-md-block mt-25">
+            <ul class="footer-doc mb-sm-5 mb-md-0 d-flex justify-content-between">
+              <li><a class="text-white" href="#">Обработка персональных данных</a></li>
+              <li><a class="text-white" href="#">Политика конфиденциальности </a></li>
+              <li><a class="text-white" href="#">Оферта</a></li>
+              <li><a class="text-white" href="#">Политика обработки данных</a></li>
+              <li><a class="text-white" href="#">Правила пользования сайтом</a></li>
+            </ul>
           </div>
         </div>
     </section>

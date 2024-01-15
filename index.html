@@ -257,6 +257,89 @@
     </div>
   </header>
 
+  <!-- Header mob -->
+  <div class="mobile-header-active mobile-header-wrapper-style">
+    <div class="mobile-header-wrapper-inner">
+      <div class="mobile-header-top">
+        <div class="mobile-header-logo">
+          <a href="index.html"><img src="./assets/img/icon/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
+          <button class="close-style search-close">
+            <i class="icon-top"></i>
+            <i class="icon-bottom"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-header-content-area">
+        <div class="mobile-search search-style-3 mobile-header-border">
+          <form action="#">
+            <input type="text" placeholder="Поиск" />
+            <button type="submit"><i class="fi-rs-search"></i></button>
+          </form>
+        </div>
+        <div class="mobile-menu-wrap mobile-header-border">
+          <!-- mobile menu start -->
+          <nav>
+            <ul class="mobile-menu font-heading">
+              <li class="menu-item-has-children">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="index.html">Каталог</a>
+                <ul class="dropdown">
+                  <li> <a href="categories.html">Рыба и
+                      морепродукты</a></li>
+                  <li> <a href="categories.html">Хлеб и
+                      выпечка</a></li>
+                  <li> <a href="categories.html">Мясо и
+                      птица</a></li>
+                  <li> <a href="categories.html">Молочные
+                      продукты, яйца</a></li>
+                  <li> <a href="categories.html">Овощи и
+                      зелень</a></li>
+                  <li> <a href="categories.html">Фрукты и
+                      ягоды</a></li>
+                </ul>
+              </li>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Для продавцов</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Для пайщиков</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Реферальная программа</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">О компании</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Новости</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- mobile menu end -->
+        </div>
+        <div class="mobile-header-info-wrap">
+          <div class="single-mobile-header-info">
+            <a href="page-contact.html"><i class="fi-rs-marker"></i> Местоположение </a>
+          </div>
+          <div class="single-mobile-header-info">
+            <a href="page-contact.html"><i class="fi-rs-marker"></i> Корзина </a>
+          </div>
+          <div class="single-mobile-header-info">
+            <a href="page-login.html"><i class="fi-rs-user"></i>Войти </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section class="section mt-50 container">
     <div id="carouselExampleIndicators" class="carousel slide carousel__back mt-5">
       <div class="carousel-indicators">
@@ -301,11 +384,11 @@
       </div>
     </div>
 
-    <div class="card__directions d-flex">
+    <div class="card__directions">
       <div class="card__name">
         <a href="/" class="flex-column">
-          <h3 class="h title__card-directions mb-3">Для продавцов</h3>
-          <p class="d subtitle__card-directions">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          <h3 class="mb-3">Для продавцов</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet....</p>
         </a>
         <div>
@@ -336,7 +419,7 @@
     <!-- card-product -->
     <div class="card__top row">
       <div class="row row-cols-1 row-cols-md-3">
-        <div class="col-md-4 col-12 col-sm-6">
+        <div class="col-md-4 col-12 col-sm-6 mb-4">
           <div class="product-cart-wrap mb-30">
             <div class="product-img-action-wrap">
               <div class="product-img product-img-zoom">
@@ -382,7 +465,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-12 col-sm-6">
+        <div class="col-md-4 col-12 col-sm-6 mb-4">
           <div class="product-cart-wrap mb-30">
             <div class="product-img-action-wrap">
               <div class="product-img product-img-zoom">
@@ -428,7 +511,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-12 col-sm-6">
+        <div class="col-md-4 col-12 col-sm-6 mb-4">
           <div class="product-cart-wrap mb-30">
             <div class="product-img-action-wrap">
               <div class="product-img product-img-zoom">
@@ -485,36 +568,36 @@
     </div>
 
     <div class="content__advantages row row-cols-1 row-cols-md-3">
-      <div class="col">
+      <div class="col-lg-4 col-12 mb-25">
         <div class="card">
           <img src="./assets/img/advantages/fresh-img.png" class="card-img-top" alt="...">
           <div class="card-body__fresh card__back-text">
-            <h5 class="card-title text-white">Свежесть</h5>
-            <p class="card-text text-white">Мы выбираем только лучших производителей и поставщиков по регионам, чтобы
+            <h3 class="mb-15 text-white">Свежесть</h3>
+            <p class="text-white">Мы выбираем только лучших производителей и поставщиков по регионам, чтобы
               гарантировать
               вам самые свежие и качественные продукты.</p>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-4 col-12 mb-25">
         <div class="soft d-flex flex-column text-center align-items-center">
           <div class="soft__text">
             <img class="soft__icon" src="./assets/img/icon/soft-icon.svg" />
-            <h3 class="h soft__title">Удобство</h3>
-            <p class="d soft__description"> Забудьте о долгих походах по магазинам.<br /> Мы доставим ваш заказ прямо к
+            <h3 class="mb-15">Удобство</h3>
+            <p class="soft__description"> Забудьте о долгих походах по магазинам.<br /> Мы доставим ваш заказ прямо к
               двери, сэкономив вам
               время и усилия.</p>
           </div>
           <img class="soft__img w-100" src="./assets/img/advantages/soft-img.png" />
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-4 col-12 mb-25">
         <div class="econom d-flex flex-column text-center align-items-center">
           <img class="soft__img w-100 mb-4" src="./assets/img/advantages/econom-img.png" />
           <div class="soft__text">
             <img class="soft__icon" src="./assets/img/icon/econom-icon.svg" />
-            <h3 class="h soft__title">Экономия</h3>
-            <p class="d soft__description"> Наши цены всегда ниже, чем на рынке. Мы верим, что каждый заслуживает доступ
+            <h3 class="mb-15">Экономия</h3>
+            <p class="soft__description"> Наши цены всегда ниже, чем на рынке. Мы верим, что каждый заслуживает доступ
               к высококачественным продуктам, поэтому делаем их доступными для всех.</p>
           </div>
         </div>
@@ -605,8 +688,8 @@
   <section class="section container">
     <div class="banner content__banner row position-relative">
       <div class="col-md-7 d-flex flex-column">
-        <h2 class="h title__banner">У нас действует <span class="span">реферальная программа</span></h2>
-        <p class="d subtitle__banner">
+        <h2 class="title__banner mb-25">У нас действует <span class="span">реферальная программа</span></h2>
+        <p class="subtitle__banner">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -619,17 +702,17 @@
   </section>
 
   <section class="section container">
-    <div class="row row-cols-1 row-cols-md-2">
-      <div class="col">
-        <div class="section__title d-flex flex-column align-items-center position-relative">
-          <h2 class="h news__title">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="section__title d-flex flex-column position-relative">
+          <h2 class="mb-15">
             Lorem ipsum dolor sit amet, adipiscing elit
           </h2>
           <img src="./assets/img/blog/newBig-img.png" class="w-100" />
           <a href="/" class="news__btn"><img src="./assets/img/icon/new-btn.svg" alt="title"></a>
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-6 col-12">
         <div class="d-flex align-items-center flex-column">
           <div class="news__text">
             <p class="d news__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -679,7 +762,7 @@
     </div>
 
     <div class="row reviews row-cols-1 row-cols-md-3">
-      <div class="col">
+      <div class="col-lg-4 col-md-12 col-12 mb-25">
         <div class="card card-rewiews">
           <div class="card-body">
             <div class="row mb-3">
@@ -700,7 +783,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-4 col-md-12 col-12 mb-25">
         <div class="card card-rewiews">
           <div class="card-body">
             <div class="row mb-3">
@@ -721,7 +804,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-4 col-md-12 col-12 mb-25">
         <div class="card card-rewiews">
           <div class="card-body">
             <div class="row mb-3">
@@ -875,18 +958,18 @@
             <div class="col-12 mb-30">
               <div class="footer-bottom"></div>
             </div>
-            <div class="col-xl-2 col-lg-6 col-md-6">
+            <div class="col-xl-12 col-lg-6 col-md-6">
               <p class="font-sm mb-0 text-white">&copy; 2023 - Lorem ipsum dolor sit amet, adipiscing elit</p>
             </div>
-            <div class="col-xl-10 col-lg-6 col-md-6 text-end d-flex d-md-block">
-              <ul class="footer-doc mb-sm-5 mb-md-0 d-flex justify-content-between">
-                <li><a class="text-white" href="#">Обработка персональных данных</a></li>
-                <li><a class="text-white" href="#">Политика конфиденциальности </a></li>
-                <li><a class="text-white" href="#">Оферта</a></li>
-                <li><a class="text-white" href="#">Политика обработки данных</a></li>
-                <li><a class="text-white" href="#">Правила пользования сайтом</a></li>
-              </ul>
-            </div>
+          </div>
+          <div class="col-xl-10 col-lg-6 col-md-6 d-flex d-md-block mt-25">
+            <ul class="footer-doc mb-sm-5 mb-md-0 d-flex justify-content-between">
+              <li><a class="text-white" href="#">Обработка персональных данных</a></li>
+              <li><a class="text-white" href="#">Политика конфиденциальности </a></li>
+              <li><a class="text-white" href="#">Оферта</a></li>
+              <li><a class="text-white" href="#">Политика обработки данных</a></li>
+              <li><a class="text-white" href="#">Правила пользования сайтом</a></li>
+            </ul>
           </div>
         </div>
     </section>

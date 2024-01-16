@@ -275,115 +275,71 @@
         <div class="col-lg-8 mb-40">
           <h1 class="heading-2 mb-10">Моя корзина</h1>
         </div>
-        <div class="col-lg-4 d-flex justify-content-between">
-          <h6 class="text-body"><a href="#" class="text-muted"><i class="fi-rs-heart mr-5"></i>Добавить все в
-              избранное</a></h6>
-          <h6 class="text-body"><a href="#" class="text-muted"><i class="fi-rs-trash mr-5"></i>Очистить корзину</a></h6>
-        </div>
       </div>
       <div class="row">
-        <div class="col-lg-8">
-          <div class="table-responsive shopping-summery cart-list">
-            <table class="table table-wishlist">
-              <thead>
-                <tr class="main-heading">
-                  <th class="custome-checkbox start pl-30">
-                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox11" value="">
-                    <label class="form-check-label" for="exampleCheckbox11"></label>
-                  </th>
-                  <th scope="col">Название товара</th>
-                  <th scope="col" colspan="2"></th>
-                  <th scope="col">Количество</th>
-                  <th scope="col">Цена</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="pt-30">
-                  <td class="custome-checkbox pl-30">
-                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="">
-                    <label class="form-check-label" for="exampleCheckbox1"></label>
-                  </td>
-                  <td class="image product-thumbnail pt-40"><img src="./assets/img/shop/product-1-1.jpg" alt="#"></td>
-                  <td class="product-des product-name">
-                    <h6 class="mb-5"><a class="product-name mb-10 text-heading" href="shop-product-right.html">Мясная тарелка со с пециями</a></h6>
-                    <div class="product-rate-cover">
-                      <div class="product-rate d-inline-block">
-                        <div class="product-rating" style="width:90%">
-                        </div>
-                      </div>
-                      <span class="font-small ml-5 text-muted"> (4.0)</span>
-                    </div>
-                  </td>
-                  <td class="text-center detail-info">
-                    <a class="btn-cart-save hover-up" href="/"><i
-                      class="fi-rs-heart"></i></a>
-                  </td>
-                  <td class="text-center detail-info" data-title="Количество">
-                    <div class="detail-extralink mr-15">
-                      <div class="detail-qty border radius">
-                        <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
-                        <span class="qty-val">1</span>
-                        <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="price" data-title="Цена">
-                    <h4 class="text-body title__numb">1.780р.</h4>
-                  </td>
-                  <td class="price" data-title="Цена">
-                    <h3 class="text-brand title__numb">1.345р.</h3>
-                  </td>
-                  <td class="action text-center"><a href="#" class="text-body"><img src='./assets/img/icon/remove-cart.svg' /></a></td>
-                </tr>
-              </tbody>
-            </table>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+          <h4>Корзина</h4>
+          <div class="cart-info d-flex justify-content-between mt-20">
+            <h6>1 товар (150 г).</h6>
+            <h6 class="text-body"><a href="#" class="text-muted"><i class="fi-rs-trash mr-5"></i>Очистить корзину</a></h6>
           </div>
-          <div class="divider-2 mb-30"></div>
-          <div class="cart-action d-flex justify-content-between">
-            <a class="btn "><i class="fi-rs-arrow-left mr-10"></i>Вернуться в магазин</a>
+          <div class="row mt-20">
+            <div class="col-4">
+              <div class="cart-body-img">
+                <img src="./assets/img/shop/product-1-1.jpg" alt="#">
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="cart-body-info d-flex align-items-center justify-content-between">
+                <div class="cart-info-left">
+                  <h6>Мясная тарелка</h6>
+                  <p class="text-muted">Цена: 1.780р.</p>
+                </div>
+                <div class="cart-info-right">
+                  <div class="detail-extralink mr-15">
+                    <div class="detail-qty border radius">
+                      <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
+                      <span class="qty-val">1</span>
+                      <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
+                    </div>
+                  </div>
+                  <a href="#" class="btn-cart-save hover-up"><i class="fi-rs-heart"></i></a>
+                  <a href="#" class="btn-cart-remove text-danger"><i class="fi-rs-trash"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="p-md-4 cart-totals ml-30">
-            <div class="table-responsive">
-              <table class="table no-border">
-                <tbody>
-                  <tr>
-                    <td class="cart_total_label">
-                      <h6 class="text-muted">Товаров в корзине:</h6>
-                    </td>
-                    <td class="cart_total_amount">
-                      <h6 class="text-heading text-end title__numb">2 шт</h6>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="cart_total_label">
-                      <h6 class="text-muted">Общий вес:</h6>
-                    </td>
-                    <td class="cart_total_amount">
-                      <h6 class="text-heading text-end title__numb">3 кг</h6>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="col" colspan="2">
-                      <div class="divider-2 mt-10 mb-10"></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="cart_total_label">
-                      <h6 class="text-muted">Итого:</h6>
-                    </td>
-                    <td class="cart_total_amount">
-                      <h4 class="text-brand text-end title__numb">1.345р.</h4>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+        
+
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+          <h4>Ваши данные</h4>
+          <form method="post">
+            <div class="row mt-20">
+              <div class="form-group col-lg-6">
+                <input type="text" required="" name="fname" placeholder="Имя">
+              </div>
+              <div class="form-group col-lg-6">
+                <input type="text" required="" name="lname" placeholder="Фамилия">
+              </div>
             </div>
-            <button class="btn-out btn__banner-main justify-content-center">
-              Оформить заказ <img class="btn__icon" src="./assets/img/icon/arrow-btn.svg" />
-            </button>
-          </div>
+            <div class="row">
+              <div class="form-group col-lg-12">
+                <input type="text" name="billing_address" required="" placeholder="Адрес">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-6">
+                <input required="" type="text" name="cname" placeholder="E-mail">
+              </div>
+              <div class="form-group col-lg-6">
+                <input required="" type="text" name="email" placeholder="Телефон">
+              </div>
+            </div>
+            <div class="form-group mb-30">
+              <textarea rows="5" placeholder="Комментарий к заказу"></textarea>
+            </div>
+          </form>
         </div>
       </div>
     </div>

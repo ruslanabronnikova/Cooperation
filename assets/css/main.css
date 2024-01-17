@@ -1757,6 +1757,7 @@ input.qty-val {
 }
 
 /*page header*/
+
 .page-header .page-title {
   font-weight: 900;
   font-size: 4rem;
@@ -2219,6 +2220,11 @@ table .product-thumbnail img {
 
 /* CART */
 
+.cart-container-product {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-primary);
+}
+
 .cart-body {
   display: flex;
   flex-direction: row;
@@ -2227,6 +2233,35 @@ table .product-thumbnail img {
 .cart-body-img {
   object-fit: cover;
   max-width: 100px;
+}
+
+.cart-body-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-info-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cart-pay  {
+  row-gap: 10px;
+}
+
+.cart-btn-pay {
+  flex: 0 0 48%;
+  font-size: 13px;
+  padding: 11px 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /*SHOP*/
@@ -3390,7 +3425,7 @@ table .product-thumbnail img {
 
 .detail-qty {
   max-width: 80px;
-  padding: 9px 20px;
+  padding: 9px 30px;
   position: relative;
   width: 100%;
   border-radius: 5px;
@@ -5546,10 +5581,6 @@ h6.post-title {
   margin: 5px 0 0 10px;
 }
 
-.header-action-2 .header-action-icon-2:last-child {
-  padding: 0 0px 0 8px;
-}
-
 .header-action-2 .header-action-icon-2>a {
   font-size: 30px;
   color: #333;
@@ -5640,9 +5671,9 @@ h6.post-title {
   padding: 0;
 }
 
-.header-action-right {
+/* .header-action-right {
   display: none;
-}
+} */
 
 .header-action-right .search-location {
   display: none;
@@ -5772,7 +5803,7 @@ h6.post-title {
   position: absolute;
   right: 0;
   top: calc(100% + 20px);
-  z-index: 99;
+  z-index: 100000;
   width: 320px;
   background-color: #fff;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
@@ -5913,8 +5944,6 @@ h6.post-title {
 .sticky-bar.stick {
   -webkit-animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
-  -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
   position: fixed;
   top: 0;
   width: 100%;
@@ -5922,7 +5951,7 @@ h6.post-title {
   left: 0;
   -webkit-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
-  border-bottom: 2px solid #FDC040;
+  padding-bottom: 10px;
   background: #fff;
 }
 
@@ -6603,7 +6632,7 @@ h6.post-title {
 }
 
 .header-style-1 .header-middle-ptb-1 {
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .header-style-1 .select2-container {
@@ -8907,10 +8936,6 @@ footer .hotline img {
     padding: 0 6px;
   }
 
-  .header-action-2 .header-action-icon-2:last-child {
-    padding: 0 0 0 6px;
-  }
-
   .header-action-2 .header-action-icon-2>a {
     color: #fff;
     fill: #fff;
@@ -9229,10 +9254,6 @@ footer .hotline img {
 
   .header-action-2 .header-action-icon-2 {
     padding: 0 10px;
-  }
-
-  .header-action-2 .header-action-icon-2:last-child {
-    padding: 0 0 0 10px;
   }
 
   .header-action-2 .header-action-icon-2>a {
@@ -9618,8 +9639,13 @@ footer .hotline img {
 }
 
 @media only screen and (max-width: 1024px) {
-  .header-style-1 .main-categori-wrap {
-    margin-right: 20px;
+  .header-action-2 .header-action-icon-2{
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .header-action-2 {
+    gap: 30px;
   }
 
   .product-cart-wrap .product-action-1 a.action-btn {
@@ -9662,13 +9688,6 @@ footer .hotline img {
     margin-right: 30px;
   }
 
-  .et,
-  .hotline,
-  li.hot-deals,
-  .header-action-2 .header-action-icon-2 span.lable {
-    display: none !important;
-  }
-
   .main-menu.main-menu-padding-1>nav>ul>li {
     padding: 0 10px;
   }
@@ -9694,10 +9713,6 @@ footer .hotline img {
 
   .header-style-1 .search-style-2 form {
     max-width: 450px;
-  }
-
-  .header-action-2 .header-action-icon-2:last-child {
-    padding: 0 0 0 8px;
   }
 
   .nav-tabs.links .nav-link {
@@ -10854,15 +10869,18 @@ footer .hotline img {
   
 }
 
+
+@media (max-width: 998px) {
+  .cart-container-data{
+    margin-top: 30px;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
   .salers-main-cta {
     height: 345px;
   }
-
-  .salers-main-cta img {
-    margin-top: 20px;
-  }
-
+  
   .salers-img-left {
     margin-bottom: 20px;
   }

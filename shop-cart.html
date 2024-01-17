@@ -277,42 +277,48 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-          <h4>Корзина</h4>
-          <div class="cart-info d-flex justify-content-between mt-20">
-            <h6>1 товар (150 г).</h6>
+        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-12">
+          <div class="d-flex justify-content-between">
+            <h4>Корзина</h4>
             <h6 class="text-body"><a href="#" class="text-muted"><i class="fi-rs-trash mr-5"></i>Очистить корзину</a></h6>
           </div>
-          <div class="row mt-20">
-            <div class="col-4">
+          <div class="cart-info mt-20 d-flex justify-content-between align-items-center">
+            <h6>1 товар (150 г).</h6>
+            <a href="#" class="btn-cart-remove text-danger"><i class="fi-rs-trash"></i></a>
+          </div>
+          <div class="row mt-20 cart-container-product">
+            <div class="col-3">
               <div class="cart-body-img">
                 <img src="./assets/img/shop/product-1-1.jpg" alt="#">
               </div>
             </div>
-            <div class="col-8">
-              <div class="cart-body-info d-flex align-items-center justify-content-between">
+            <div class="col-9">
+              <div class="cart-body-info">
                 <div class="cart-info-left">
                   <h6>Мясная тарелка</h6>
                   <p class="text-muted">Цена: 1.780р.</p>
                 </div>
                 <div class="cart-info-right">
                   <div class="detail-extralink mr-15">
+                    <a href="#" class="btn-cart-save hover-up"><i class="fi-rs-heart"></i></a>
                     <div class="detail-qty border radius">
                       <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
                       <span class="qty-val">1</span>
                       <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
                     </div>
                   </div>
-                  <a href="#" class="btn-cart-save hover-up"><i class="fi-rs-heart"></i></a>
-                  <a href="#" class="btn-cart-remove text-danger"><i class="fi-rs-trash"></i></a>
                 </div>
               </div>
             </div>
           </div>
+          <div class="d-flex justify-content-between mt-20">
+            <h4>Итого:</h4>
+            <h5>1.000р</h6>
+          </div>
         </div>
         
 
-        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 cart-container-data">
           <h4>Ваши данные</h4>
           <form method="post">
             <div class="row mt-20">
@@ -340,6 +346,17 @@
               <textarea rows="5" placeholder="Комментарий к заказу"></textarea>
             </div>
           </form>
+          <div class="mt-20 mb-20">
+            <h4>Выберете способ оплаты</h4>
+            <div class="cart-pay d-flex justify-content-between align-items-center flex-wrap mt-20">
+              <button class="btn-out cart-btn-pay"><img class="btn__icon" src="./assets/img/icon/pay-online-cart.svg" /> Картой онлайн</button>
+              <button class="btn-out cart-btn-pay"><img class="btn__icon" src="./assets/img/icon/pay-real-cart.svg" />Картой при получении</button>
+              <button class="btn-out cart-btn-pay"><img class="btn__icon" src="./assets/img/icon/pay-real-money.svg" /> Наличными при получении</button>
+            </div>   
+          </div>
+          <button class="btn-fill">
+            Оформить заказ <img class="btn__icon" src="./assets/img/icon/arrow-btn-light.svg" />
+          </button>
         </div>
       </div>
     </div>

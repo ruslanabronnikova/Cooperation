@@ -12,7 +12,7 @@
 <body>
   <!-- Header -->
   <header class="header-area header-style-1 header-height-2 sticky-bar">
-    <div class="header-top header-top-ptb-1 d-none d-lg-block">
+    <div class="header-top header-top-ptb-1 d-none d-xl-block">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-3 col-lg-4">
@@ -40,13 +40,13 @@
         </div>
       </div>
     </div>
-    <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
+    <div class="header-middle header-middle-ptb-1 d-none d-xl-block">
       <div class="container">
         <div class="header-wrap">
           <div class="logo logo-width-1">
             <a href="index.html"><img src="./assets/img/icon/logo.svg" alt="logo" /></a>
           </div>
-          <div class="main-categori-wrap d-none d-lg-block">
+          <div class="main-categori-wrap d-none d-xl-block">
             <a class="categories-button-active" href="#">
               <img class="categories-icon mr-10" src="./assets/img/icon/Category.svg" />
               <p class="mr-25 categories-text">Каталог</p>
@@ -215,8 +215,8 @@
     <div class="header-bottom mt-20">
       <div class="container">
         <div class="header-wrap header-space-between position-relative sticky-bar">
-          <div class="header-nav d-none d-lg-flex">
-            <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
+          <div class="header-nav d-none d-xl-flex">
+            <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-xl-block font-heading">
               <nav>
                 <ul>
                   <li>
@@ -241,7 +241,7 @@
               </nav>
             </div>
           </div>
-          <div class="header-action-icon-2 d-block d-lg-none">
+          <div class="header-action-icon-2 d-block d-xl-none">
             <div class="burger-icon burger-icon-white">
               <span class="burger-icon-top"></span>
               <span class="burger-icon-mid"></span>
@@ -269,7 +269,7 @@
       </div>
       <div class="mobile-header-content-area">
 
-        
+
 
         <div class="mobile-search search-style-3 mobile-header-border">
           <form action="#">
@@ -347,22 +347,30 @@
   </div>
 
   <section class="section mt-50 container">
-    <div id="carouselExampleIndicators" class="carousel slide carousel__back mt-5">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-      </div>
-      <div class="carousel-inner border-radius-20">
-        <div class="carousel-item active">
-          <div class="banner__main banner__main-01 content__banner row position-relative">
-            <div class="col-md-7 d-flex flex-column">
-              <h1 class="h title__banner">Заказывайте все товары со <span class="span">скидкой до 70%</span></h1>
-              <p class="d subtitle__banner">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="row position-relative">
+            <div class="col-12">
+              <picture>
+                <!-- Изображение для экранов с разрешением md и ниже -->
+                <source media="(min-width: 990px)" srcset="./assets/img/slider/slider-1440px.png">
+                <!-- Изображение для экранов с разрешением 990px и выше -->
+                <img class="w-100 border-radius-20" src="./assets/img/slider/slider-720px.png"
+                  alt="Адаптированное изображение">
+              </picture>
+            </div>
+            <div
+              class="col-lg-6 col-xl-6 col-xxl-6 col-md-10 col-9 banner-content position-absolute top-50 start-md-10 translate-middle-y">
+              <h1>Заказывайте все товары со <span class="span">скидкой до 70%</span></h1>
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
                 consequat.
               </p>
               <button class="btn-out btn__banner-main">
@@ -371,23 +379,11 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="banner__main banner__main-02 content__banner row position-relative">
-            <div class="col-md-7 d-flex flex-column">
-              <h1 class="h title__banner">Заказывайте все товары со <span class="span">скидкой до 70%</span></h1>
-              <p class="d subtitle__banner">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-              </p>
-              <button class="btn-out btn__banner-main">
-                Подробнее <img class="btn__icon" src="./assets/img/icon/arrow-btn.svg" />
-              </button>
-            </div>
-          </div>
-        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
       </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
     </div>
 
     <div class="card__directions">
@@ -425,7 +421,7 @@
     <!-- card-product -->
     <div class="card__top row">
       <div class="row row-cols-1 row-cols-md-3">
-        <div class="col-md-4 col-12 col-sm-6 mb-4">
+        <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-4">
           <div class="product-cart-wrap mb-30">
             <div class="product-img-action-wrap">
               <div class="product-img product-img-zoom">
@@ -471,7 +467,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-12 col-sm-6 mb-4">
+        <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-4">
           <div class="product-cart-wrap mb-30">
             <div class="product-img-action-wrap">
               <div class="product-img product-img-zoom">
@@ -517,7 +513,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-12 col-sm-6 mb-4">
+        <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-4">
           <div class="product-cart-wrap mb-30">
             <div class="product-img-action-wrap">
               <div class="product-img product-img-zoom">
@@ -574,7 +570,7 @@
     </div>
 
     <div class="content__advantages row row-cols-1 row-cols-md-3">
-      <div class="col-lg-4 col-12 mb-25">
+      <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-25">
         <div class="card">
           <img src="./assets/img/advantages/fresh-img.png" class="card-img-top" alt="...">
           <div class="card-body__fresh card__back-text">
@@ -585,7 +581,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-12 mb-25">
+      <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-25">
         <div class="soft d-flex flex-column text-center align-items-center">
           <div class="soft__text">
             <img class="soft__icon" src="./assets/img/icon/soft-icon.svg" />
@@ -597,8 +593,9 @@
           <img class="soft__img w-100" src="./assets/img/advantages/soft-img.png" />
         </div>
       </div>
-      <div class="col-lg-4 col-12 mb-25">
-        <div class="econom d-flex flex-column text-center align-items-center">
+      <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-25">
+        <div
+          class="d-flex flex-xl-column flex-xxl-column flex-lg-column flex-md-column-reverse flex-sm-column-reverse flex-column-reverse text-center align-items-center">
           <img class="soft__img w-100 mb-4" src="./assets/img/advantages/econom-img.png" />
           <div class="soft__text">
             <img class="soft__icon" src="./assets/img/icon/econom-icon.svg" />
@@ -619,7 +616,7 @@
     </div>
 
     <div class="popular__category row">
-      <div class="col-md-7 categoty__left">
+      <div class="col-md-12 col-lg-7 col-xl-7 col-xxl-7 md-mb-25 categoty__left">
         <div class="category__top d-flex flex-column">
           <div class="category__list mb-25">
             <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
@@ -650,7 +647,7 @@
               </div>
             </div>
           </div>
-          <div class="category__card">
+          <div class="category__card mb-25">
             <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
               <img src="./assets/img/category/vegetablesfood.png" alt="" />
               <div class="banner-text">
@@ -663,7 +660,7 @@
         </div>
       </div>
 
-      <div class="col-md-5 categoty__right">
+      <div class="col-md-12 col-lg-5 col-xl-5 col-xxl-5 categoty__right">
         <div class="category__card">
           <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
             <img src="./assets/img/category/beeffood.png" alt="" />
@@ -692,13 +689,25 @@
   </section>
 
   <section class="section container">
-    <div class="banner content__banner row position-relative">
-      <div class="col-md-7 d-flex flex-column">
-        <h2 class="title__banner mb-25">У нас действует <span class="span">реферальная программа</span></h2>
-        <p class="subtitle__banner">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <div class="row position-relative">
+      <div class="col-12">
+        <picture>
+          <!-- Изображение для экранов с разрешением md и ниже -->
+          <source media="(min-width: 990px)" srcset="./assets/img/banner/referal-banner-1440px.png">
+          <!-- Изображение для экранов с разрешением 990px и выше -->
+          <img class="w-100 border-radius-20" src="./assets/img/banner/referal-banner-720px.png"
+            alt="Адаптированное изображение">
+        </picture>
+      </div>
+      <div
+        class="col-lg-6 col-xl-6 col-xxl-6 col-md-10 col-9 banner-content position-absolute top-50 start-md-10 translate-middle-y">
+        <h2>У нас действует <span class="span">реферальная программа</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo
+          consequat.
         </p>
         <button class="btn-out btn__banner-main">
           Подробнее <img class="btn__icon" src="./assets/img/icon/arrow-btn.svg" />
@@ -843,7 +852,6 @@
         Есть вопросы? Ниже на все найдется ответ
       </h2>
     </div>
-
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
@@ -905,7 +913,7 @@
   <!-- footer -->
   <footer class="main">
     <section class="section mb-0 footer-mid footer__back">
-      <div class="container pt-30 pb-20">
+      <div class="container footer-content">
         <div class="row">
           <div class="col">
             <div class="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0 wow animate__animated animate__fadeInUp"
@@ -1001,9 +1009,14 @@
   <script src="assets/js/plugins/jquery.vticker-min.js"></script>
   <script src="assets/js/plugins/jquery.theia.sticky.js"></script>
   <script src="assets/js/plugins/jquery.elevatezoom.js"></script>
+  <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+  <script src="assets/js/plugins/inizializ-swiper.js"></script>
   <!-- Template  JS -->
   <script src="./assets/js/main.js?v=5.6"></script>
   <script src="./assets/js/shop.js?v=5.6"></script>
+
+
+  
 </body>
 
 </html>

@@ -341,24 +341,29 @@
   </div>
 
   <section class="section container mt-50">
-    <div id="carouselExampleIndicators" class="carousel slide carousel__back mt-5">
-      <div class="carousel-inner border-radius-20">
-        <div class="carousel-item active">
-          <div class="banner__main banner__main-delivery content__banner row position-relative">
-            <div class="col-md-7 d-flex flex-column">
-              <h1 class="h title__banner">Получайте свои любимые товары <span class="span">не выходя из дома</span></h1>
-              <p class="d subtitle__banner">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-              </p>
-              <button class="btn-out btn__banner-main">
-                Подробнее <img class="btn__icon" src="./assets/img/icon/arrow-btn.svg" />
-              </button>
-            </div>
-          </div>
-        </div>
+    <div class="row position-relative">
+      <div class="col-12">
+        <picture>
+          <!-- Изображение для экранов с разрешением md и ниже -->
+          <source media="(min-width: 990px)" srcset="./assets/img/banner/delivery-banner-1440px.png">
+          <!-- Изображение для экранов с разрешением 990px и выше -->
+          <img class="w-100 border-radius-20" src="./assets/img/banner/delivery-banner-720px.png"
+            alt="Адаптированное изображение">
+        </picture>
+      </div>
+      <div
+        class="col-lg-6 col-xl-6 col-xxl-6 col-md-10 col-9 banner-content position-absolute top-50 start-md-10 translate-middle-y">
+        <h1>Заказывайте все товары со <span class="span">скидкой до 70%</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo
+          consequat.
+        </p>
+        <button class="btn-out btn__banner-main">
+          Подробнее <img class="btn__icon" src="./assets/img/icon/arrow-btn.svg" />
+        </button>
       </div>
     </div>
   </section>
